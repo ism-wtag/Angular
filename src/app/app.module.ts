@@ -10,6 +10,8 @@ import { EmployeesComponent } from './core/layout/employees/employees.component'
 import { EditComponent } from './core/layout/employees/component/edit/edit.component';
 import { FormsModule } from '@angular/forms';
 import { ShowComponent } from './core/layout/employees/component/show/show.component';
+import { FormComponent } from './shared/form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import { ShowComponent } from './core/layout/employees/component/show/show.compo
     EmployeesComponent,
     EditComponent,
     ShowComponent,
+    FormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
