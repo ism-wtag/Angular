@@ -1,4 +1,4 @@
-<div class="container mt-5" style="text-align: center;">
+<div class="con container mt-5">
   <h1>List of Employees</h1>
   <table class="table table-striped">
     <thead>
@@ -17,8 +17,8 @@
         <td>{{ employee.email }}</td>
         <td>{{ employee.phone }}</td>
         <td>
-          <button style="margin-right: 15px;" class="btn btn-success" [routerLink]="['employee/show', employee.id]">Show</button>
-          <button style="margin-right: 15px;" class="btn btn-primary" [routerLink]="['employee/edit', employee.id]">Edit</button>
+          <button class="but btn btn-success" [routerLink]="['employee/show', employee.id]">Show</button>
+          <button class="but btn btn-primary" [routerLink]="['employee/edit', employee.id]">Edit</button>
           <button (click)="onDelete(employee.id)" class="btn btn-danger">Delete</button>
         </td>
       </tr>
