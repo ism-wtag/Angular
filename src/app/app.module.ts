@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import { EditComponent } from './pages/employees/edit/edit.component';
 import { FormsModule } from '@angular/forms';
+import { ShowComponent } from './pages/employees/show/show.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     EmployeesComponent,
-    EditComponent
+    EditComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,

@@ -16,10 +16,12 @@
         <td>{{ employee.name }}</td>
         <td>{{ employee.email }}</td>
         <td>{{ employee.phone }}</td>
-        <td><a [routerLink]="['employee/show', employee.id]">Show</a></td>
-        <td><a [routerLink]="['employee/edit', employee.id]">Edit</a></td>
-        <td><a [routerLink]="['employee/delete', employee.id]">Delete</a></td>
+        <td>
+          <button style="margin-right: 15px;" class="btn btn-success" [routerLink]="['employee/show', employee.id]">Show</button>
+          <button style="margin-right: 15px;" class="btn btn-primary" [routerLink]="['employee/edit', employee.id]">Edit</button>
+          <button (click)="onDelete(employee.id)" class="btn btn-danger">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
-</div> 
+</div>
