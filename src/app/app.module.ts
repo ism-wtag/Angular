@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { ShowComponent } from './core/layout/employees/component/show/show.component';
 import { FormComponent } from './shared/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ParentComponent } from './core/layout/parent/parent.component';
+import { ChildComponent } from './core/layout/parent/child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     EditComponent,
     ShowComponent,
     FormComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,ReactiveFormsModule],
   providers: [],
