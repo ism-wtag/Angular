@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { ShowComponent } from './core/layout/employees/component/show/show.component';
 import { FormComponent } from './shared/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContentComponent } from './core/layout/content/content.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     EditComponent,
     ShowComponent,
     FormComponent,
+    ContentComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,ReactiveFormsModule],
   providers: [],

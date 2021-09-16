@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmployeesComponent } from './core/layout/employees/employees.component';
 import { EditComponent } from './core/layout/employees/component/edit/edit.component';
 import { ShowComponent } from './core/layout/employees/component/show/show.component';
+import { ContentComponent } from './core/layout/content/content.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'employee/show/:id',
     component: ShowComponent,
+  },
+  {
+    path: 'content',
+    component: ContentComponent,
   },
 ];
 
